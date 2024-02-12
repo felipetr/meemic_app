@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meemic</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link
+      rel="icon shortcut"
+      type="image/x-icon"
+      href="assets/imagens/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/lib/bootstrap/css/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=5" />
+   
+  </head>
+
+  <body>
+    
+    <div id="app">
+      
+      <section
+        id="home"
+        class="text-center w-100 d-flex align-items-center displayedsection"
+      >
+      
+        <form id="tokenForm" class="w-100">
+          <h1 id="logo">Meemic</h1>
+          <h5 id="subtitle">Um jogo de mímica</h5>
+          <div class="menuhome d-inline-block px-1">
+            <div class="pl-3">Insira o Token</div>
+                  <input id="token"
+                    value="" maxlength="6" required
+                    class="mb-3 text-center form-control name token unchanged"
+                  />
+            <button id="startBtn"
+              title="Iniciar"
+              class="btn btn-goto btn-light w-100 btn-block btn-start btn-lg"
+              data-goto="configs"
+            >
+              Iniciar
+            </button>
+
+            
+            </div>
+          </div>
+        </form>
+         
+
+
+          <div
+          class="modal fade"
+          id="tokenModal"
+          tabindex="-1"
+          aria-labelledby="tokenModal"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog text-center modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
+            <div class="modal-content">
+              
+              <div class="modal-body">
+                <h5 class="text-center">Token não encontrado</h5>
+                Verifique e tente novamente
+                <button
+                type="button"
+                class="btn btn-light mt-3 w-100 btn-block btn-start"
+                data-dismiss="modal"
+              >
+                Ok
+              </button>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="assets/lib/jquery-3.6.0.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+
+  </body>
+</html>
